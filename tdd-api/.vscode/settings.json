@@ -1,0 +1,40 @@
+{
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "always"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.rulers": [
+            88
+        ]
+    },
+    "mypy-type-checker.path": [
+        ".venv/bin/mypy"
+    ],
+    "editor.formatOnSave": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestPath": ".venv/bin/pytest",
+    "python.testing.unittestEnabled": false,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.extraPaths": [
+        ".venv/Lib/site-packages"
+    ],
+    "python.analysis.fixAll": [
+        "source.unusedImports"
+    ],
+    "python.languageServer": "Pylance",
+    "mypy.dmypyExecutable": "${workspaceFolder}/.venv/bin/dmypy",
+    "mypy.targets": [
+        "."
+    ],
+    "mypy.runUsingActiveInterpreter": true,
+    "python.analysis.typeCheckingMode": "standard",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 88,
+    "editor.wrappingIndent": "indent"
+}
