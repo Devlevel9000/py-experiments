@@ -3,11 +3,9 @@ from fastapi import FastAPI
 from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
 from pydantic import BaseModel
 
-from tdd_api import r
 from tdd_api.core.dependencies import Logger
 
 app = FastAPI(title="TDD API")
-app.include_router(r.router)
 
 FastAPIInstrumentor.instrument_app(app)
 
